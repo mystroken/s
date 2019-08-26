@@ -1,0 +1,22 @@
+{
+  "name": "@mystroken/s",
+  "version": "0.0.1",
+  "description": "A custom scroll event library",
+  "main": "index.js",
+  "author": "Mystro Ken <mystroken@gmail.com>",
+  "license": "MIT",
+  "scripts": {},
+  "homepage": "https://github.com/mystroken/s#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mystroken/s.git"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "scroll",
+    "virtual-scroll",
+    "creativecoding"
+  ]
+}
