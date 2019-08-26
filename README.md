@@ -14,7 +14,9 @@
 
 ## Installation
 
-```npm install @mystroken/s```
+```bash
+npm install @mystroken/s
+```
 
 ## Usage & API
 
@@ -31,9 +33,9 @@ Remove the listener.
 Will remove all events and unbind the DOM listeners.
 
 ## Options
-- el: the target element for mobile touch events. *Defaults to window.*
-- mouseMultiplier: General multiplier for all mousewheel (including Firefox). *Default to 1.*
-- touchMultiplier: Mutiply the touch action by this modifier to make scroll faster than finger movement. *Defaults to 2.*
-- firefoxMultiplier: Firefox on Windows needs a boost, since scrolling is very slow. *Defaults to 15.*
-- keyStep: How many pixels to move with each key press. *Defaults to 120.*
-- preventTouch: If true, automatically call e.preventDefault on touchMove. Defaults to false.
+- **el**: the target element for mobile touch events. *Defaults to window.*
+- **mouseMultiplier**: General multiplier for all mousewheel (including Firefox). *Default to 1.*
+- **touchMultiplier**: Mutiply the touch action by this modifier to make scroll faster than finger movement. *Defaults to 2.*
+- **firefoxMultiplier**: Firefox on Windows needs a boost, since scrolling is very slow. *Defaults to 15.*
+- **keyStep**: How many pixels to move with each key press. *Defaults to 120.*
+- **preventTouch**: If true, automatically call e.preventDefault on touchMove. Defaults to false.

@@ -129,16 +129,16 @@ S.prototype._onKeyDown = function(e) {
   this._e.deltaX = this._e.deltaY = 0;
   switch(e.keyCode) {
     case 37:
-      this._e.deltaX = -keyStep;
+      this._e.deltaX = -this.options.keyStep;
       break;
     case 39:
-      this._e.deltaX = keyStep;
+      this._e.deltaX = this.options.keyStep;
       break;
     case 38:
-      this._e.deltaY = keyStep;
+      this._e.deltaY = this.options.keyStep;
       break;
     case 40:
-      this._e.deltaY = -keyStep;
+      this._e.deltaY = -this.options.keyStep;
       break;
   }
 
