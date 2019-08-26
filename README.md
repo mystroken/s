@@ -2,7 +2,7 @@
 
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/mystroken/s/issues)
 
-> Custom scroll event with touch (works on <=iOS7) and keyboard compatible.<br>This is a fork of Bartek Drozdz VirtualScroll util. See his [article](http://www.everyday3d.com/blog/index.php/2014/08/18/smooth-scrolling-with-virtualscroll/) for a complete description.
+> S is a JavaScript library that allows you to implement custom scroll events.<br>This is a fork of Bartek Drozdz [VirtualScroll util](http://www.everyday3d.com/blog/index.php/2014/08/18/smooth-scrolling-with-virtualscroll/) and weighs less than 2KB (minified and compressed).
 
 <br>
 
