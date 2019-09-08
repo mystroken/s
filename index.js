@@ -1,5 +1,21 @@
 'use strict';
 
+function isSupportsPassive() {
+  // Test via a getter in the options object to see if the passive property is accessed
+  var supportsPassive = false;
+  try {
+    var opts = Object.defineProperty({}, 'passive', {
+      get: function() {
+        supportsPassive = true;
+      }
+    });
+    window.addEventListener("testPassive", null, opts);
+    window.removeEventListener("testPassive", null, opts);
+  } catch (e) {}
+
+  return supportsPassive;
+}
+
 function S(options) {
 
   this._e = {
@@ -147,11 +163,11 @@ S.prototype._onKeyDown = function(e) {
 
 S.prototype._bind = function() {
 
-  if(this.hasWheelEvent) this.el.addEventListener("wheel", this._onWheel);
-  if(this.hasMouseWheelEvent) this.el.addEventListener("mousewheel", this._onMouseWheel);
+  if(this.hasWheelEvent) this.el.addEventListener("wheel", this._onWheel, isSupportsPassive() ? { passive: true } : false);
+  if(this.hasMouseWheelEvent) this.el.addEventListener("mousewheel", this._onMouseWheel, isSupportsPassive() ? { passive: true } : false);
 
   if(this.hasTouchEvent) {
-    this.el.addEventListener("touchstart", this._onTouchStart);
+    this.el.addEventListener("touchstart", this._onTouchStart, isSupportsPassive() ? { passive: true } : false);
     this.el.addEventListener("touchmove", this._onTouchMove);
   }
 

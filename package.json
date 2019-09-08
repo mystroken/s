@@ -1,6 +1,6 @@
 {
   "name": "@mystroken/s",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A custom scroll event library",
   "main": "index.js",
   "author": "Mystro Ken <mystroken@gmail.com>",
