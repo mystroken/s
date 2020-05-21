@@ -141,26 +141,31 @@ S.prototype._onTouchMove = function(e) {
 };
 
 S.prototype._onKeyDown = function(e) {
-  // 37 left arrow, 38 up arrow, 39 right arrow, 40 down arrow
+  // 32 space, 37 left arrow, 38 up arrow, 39 right arrow, 40 down arrow
   this._e.deltaX = this._e.deltaY = 0;
   switch(e.keyCode) {
     case 37:
       this._e.deltaX = -this.options.keyStep;
+      this._notify(e);
       break;
     case 39:
       this._e.deltaX = this.options.keyStep;
+      this._notify(e);
       break;
     case 38:
       this._e.deltaY = this.options.keyStep;
+      this._notify(e);
       break;
     case 40:
+    case 32:
       this._e.deltaY = -this.options.keyStep;
+      this._notify(e);
       break;
   }
 
   // Only notify when we got something new.
-  if (this._e.deltaX != 0 && this._e.deltaY != 0) {
-    this._notify(e);
+  if (this._e.deltaX != 0 || this._e.deltaY != 0) {
+    // this._notify(e);
   }
 };
 
