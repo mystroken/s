@@ -158,7 +158,10 @@ S.prototype._onKeyDown = function(e) {
       break;
   }
 
-  this._notify(e);
+  // Only notify when we got something new.
+  if (this._e.deltaX != 0 && this._e.deltaY != 0) {
+    this._notify(e);
+  }
 };
 
 S.prototype._bind = function() {
