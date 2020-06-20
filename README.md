@@ -1,5 +1,10 @@
 # :surfer: S
 
+
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/@mystroken/s)
+![npm](https://img.shields.io/npm/dw/@mystroken/s)
+![npm](https://img.shields.io/npm/v/@mystroken/s)
+![GitHub last commit](https://img.shields.io/github/last-commit/mystroken/s)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/mystroken/s/issues)
 
 > S is a JavaScript library that allows you to implement custom scroll events.<br>This is a fork of Bartek Drozdz [VirtualScroll util](http://www.everyday3d.com/blog/index.php/2014/08/18/smooth-scrolling-with-virtualscroll/) and weighs ~1.5KB (minified and compressed).
